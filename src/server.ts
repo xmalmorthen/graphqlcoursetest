@@ -10,7 +10,7 @@ import depthLimit from 'graphql-depth-limit';
 
 const app = express();
 
-app.use('*', cors());
+app.use(cors());
 app.use(compression());
 
 const servidor = new ApolloServer ({
